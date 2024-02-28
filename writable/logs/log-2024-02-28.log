@@ -56,3 +56,208 @@ CRITICAL - 2024-02-28 11:10:05 --> Undefined variable $model
 #6 {main}
 ERROR - 2024-02-28 11:12:18 --> Unknown column 'id_stok' in 'where clause'
 ERROR - 2024-02-28 11:13:27 --> Unknown column 'id_stok' in 'where clause'
+CRITICAL - 2024-02-28 13:37:57 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\dbkasir\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\dbkasir\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\dbkasir\app\Controllers\ConTrans.php(13): CodeIgniter\Model->__call('getNoTrans2', Array)
+#3 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConTrans->transaksi()
+#4 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConTrans))
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2024-02-28 13:40:41 --> Undefined variable $m
+#0 C:\xampp\htdocs\dbkasir\app\Views\isi.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 4)
+#1 C:\xampp\htdocs\dbkasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dbkasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('isi', Array, true)
+#4 C:\xampp\htdocs\dbkasir\app\Controllers\Home.php(53): view('isi')
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\Home->mpg()
+#6 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-02-28 13:41:45 --> Undefined variable $m
+#0 C:\xampp\htdocs\dbkasir\app\Views\isi.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 4)
+#1 C:\xampp\htdocs\dbkasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dbkasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('isi', Array, true)
+#4 C:\xampp\htdocs\dbkasir\app\Controllers\Home.php(60): view('isi', Array)
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\Home->mpg()
+#6 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-02-28 13:42:39 --> Undefined property: stdClass::$media
+#0 C:\xampp\htdocs\dbkasir\app\Views\isi.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 12)
+#1 C:\xampp\htdocs\dbkasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dbkasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('isi', Array, true)
+#4 C:\xampp\htdocs\dbkasir\app\Controllers\Home.php(60): view('isi', Array)
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\Home->mpg()
+#6 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-02-28 13:44:45 --> Undefined property: stdClass::$id_makanan
+#0 C:\xampp\htdocs\dbkasir\app\Views\isi.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 35)
+#1 C:\xampp\htdocs\dbkasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dbkasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('isi', Array, true)
+#4 C:\xampp\htdocs\dbkasir\app\Controllers\Home.php(60): view('isi', Array)
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\Home->mpg()
+#6 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-02-28 13:47:19 --> Class "App\Controllers\C_model" not found
+#0 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\Home->mpg()
+#1 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+ERROR - 2024-02-28 13:47:30 --> Table 'db_kasir.makanan' doesn't exist
+CRITICAL - 2024-02-28 13:47:30 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\dbkasir\app\Controllers\Home.php(57): App\Models\C_model->getCart()
+#1 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\Home->mpg()
+#2 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2024-02-28 13:49:23 --> Unknown column 'makanan' in 'field list'
+CRITICAL - 2024-02-28 13:50:05 --> Undefined property: stdClass::$media
+#0 C:\xampp\htdocs\dbkasir\app\Views\footer2.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 51)
+#1 C:\xampp\htdocs\dbkasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dbkasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('footer2', Array, true)
+#4 C:\xampp\htdocs\dbkasir\app\Controllers\Home.php(62): view('footer2', Array)
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\Home->mpg()
+#6 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-02-28 13:50:37 --> Undefined property: stdClass::$nm_makanan
+#0 C:\xampp\htdocs\dbkasir\app\Views\footer2.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 56)
+#1 C:\xampp\htdocs\dbkasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dbkasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('footer2', Array, true)
+#4 C:\xampp\htdocs\dbkasir\app\Controllers\Home.php(62): view('footer2', Array)
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\Home->mpg()
+#6 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-02-28 14:01:25 --> Invalid file: pelanggan.php
+#0 C:\xampp\htdocs\dbkasir\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pelanggan.php')
+#1 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('pelanggan', Array, true)
+#2 C:\xampp\htdocs\dbkasir\app\Controllers\ConPelanggan.php(18): view('pelanggan', Array)
+#3 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConPelanggan->pelanggan()
+#4 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConPelanggan))
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2024-02-28 14:08:05 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\dbkasir\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\dbkasir\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\dbkasir\app\Controllers\ConPelanggan.php(60): CodeIgniter\Model->__call('getKodeAnak', Array)
+#3 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConPelanggan->output_tpelanggan()
+#4 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConPelanggan))
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2024-02-28 14:08:55 --> Undefined variable $model
+#0 C:\xampp\htdocs\dbkasir\app\Controllers\ConPelanggan.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 68)
+#1 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConPelanggan->output_tpelanggan()
+#2 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConPelanggan))
+#3 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2024-02-28 14:18:32 --> Unknown column 'notrans.tgl' in 'where clause'
+CRITICAL - 2024-02-28 14:18:32 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\dbkasir\app\Controllers\ConTrans.php(13): App\Models\T_model->getNoTrans()
+#1 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConTrans->transaksi()
+#2 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConTrans))
+#3 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2024-02-28 14:21:46 --> Undefined variable $e
+#0 C:\xampp\htdocs\dbkasir\app\Controllers\ConCart.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 55)
+#1 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConCart->checkout()
+#2 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConCart))
+#3 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2024-02-28 14:22:05 --> Unknown column 'makanan' in 'field list'
+CRITICAL - 2024-02-28 14:26:22 --> Undefined property: stdClass::$nm_pelanggan
+#0 C:\xampp\htdocs\dbkasir\app\Views\transaksi.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 43)
+#1 C:\xampp\htdocs\dbkasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dbkasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi', Array, true)
+#4 C:\xampp\htdocs\dbkasir\app\Controllers\ConTrans.php(17): view('transaksi', Array)
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConTrans->transaksi()
+#6 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConTrans))
+#7 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2024-02-28 14:26:59 --> Column 'create_date' in field list is ambiguous
+CRITICAL - 2024-02-28 14:26:59 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\dbkasir\app\Controllers\ConTrans.php(13): App\Models\T_model->getNoTrans()
+#1 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConTrans->transaksi()
+#2 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConTrans))
+#3 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2024-02-28 14:33:22 --> Undefined property: stdClass::$nm_pelanggan
+#0 C:\xampp\htdocs\dbkasir\app\Views\transaksi.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 43)
+#1 C:\xampp\htdocs\dbkasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dbkasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi', Array, true)
+#4 C:\xampp\htdocs\dbkasir\app\Controllers\ConTrans.php(49): view('transaksi', Array)
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConTrans->filter_trans()
+#6 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConTrans))
+#7 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-02-28 14:35:53 --> Class "App\Controllers\H_model" not found
+#0 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConTrans->soft_delete_trans('2')
+#1 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConTrans))
+#2 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2024-02-28 14:36:30 --> Invalid file: e_trans.php
+#0 C:\xampp\htdocs\dbkasir\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('e_trans.php')
+#1 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('e_trans', Array, true)
+#2 C:\xampp\htdocs\dbkasir\app\Controllers\ConTrans.php(84): view('e_trans', Array)
+#3 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConTrans->e_trans('2')
+#4 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConTrans))
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2024-02-28 14:53:43 --> Invalid file: bin_user.php
+#0 C:\xampp\htdocs\dbkasir\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('bin_user.php')
+#1 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('bin_user', Array, true)
+#2 C:\xampp\htdocs\dbkasir\app\Controllers\ConUser.php(33): view('bin_user', Array)
+#3 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConUser->bin_user()
+#4 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConUser))
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}

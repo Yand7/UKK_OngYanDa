@@ -4,6 +4,9 @@ namespace App\Controllers;
 use CodeIgniter\Controller;
 use App\Models\H_model;
 use App\Models\U_model;
+use App\Models\B_model;
+use App\Models\C_model;
+use App\Models\P_model;
 
 class Home extends BaseController
 {
@@ -48,9 +51,19 @@ class Home extends BaseController
 	}
     
     public function mpg(){
+        $model = new B_model();
+        $data['b'] = $model->getBarang();
+		
+		$model2 = new C_model();
+        $data['c'] = $model2->getCart();
+
+        $model = new P_model();
+        $data['p'] = $model->getPelanggan();
+
         echo view('header');
         echo view('menu');
-        echo view('footer');
+        echo view('isi', $data);
+        echo view('footer2', $data);
     }
 	
 }
