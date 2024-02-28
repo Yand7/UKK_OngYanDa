@@ -1,0 +1,58 @@
+CRITICAL - 2024-02-28 10:44:48 --> Undefined property: stdClass::$stok
+#0 C:\xampp\htdocs\dbkasir\app\Views\stok.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 26)
+#1 C:\xampp\htdocs\dbkasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dbkasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('stok', Array, true)
+#4 C:\xampp\htdocs\dbkasir\app\Controllers\ConStok.php(20): view('stok', Array)
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConStok->stok()
+#6 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConStok))
+#7 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-02-28 10:45:05 --> Undefined property: stdClass::$id_barang
+#0 C:\xampp\htdocs\dbkasir\app\Views\stok.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 28)
+#1 C:\xampp\htdocs\dbkasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dbkasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('stok', Array, true)
+#4 C:\xampp\htdocs\dbkasir\app\Controllers\ConStok.php(20): view('stok', Array)
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConStok->stok()
+#6 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConStok))
+#7 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-02-28 11:00:20 --> Undefined variable $lvl
+#0 C:\xampp\htdocs\dbkasir\app\Views\t_stok.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 9)
+#1 C:\xampp\htdocs\dbkasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dbkasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('t_stok', Array, true)
+#4 C:\xampp\htdocs\dbkasir\app\Controllers\ConStok.php(35): view('t_stok', Array)
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConStok->t_stok()
+#6 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConStok))
+#7 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-02-28 11:00:26 --> Undefined property: stdClass::$id_level
+#0 C:\xampp\htdocs\dbkasir\app\Views\t_stok.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\dbkasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dbkasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('t_stok', Array, true)
+#4 C:\xampp\htdocs\dbkasir\app\Controllers\ConStok.php(35): view('t_stok', Array)
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConStok->t_stok()
+#6 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConStok))
+#7 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-02-28 11:10:05 --> Undefined variable $model
+#0 C:\xampp\htdocs\dbkasir\app\Controllers\ConStok.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 56)
+#1 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConStok->output_tstok()
+#2 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConStok))
+#3 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2024-02-28 11:12:18 --> Unknown column 'id_stok' in 'where clause'
+ERROR - 2024-02-28 11:13:27 --> Unknown column 'id_stok' in 'where clause'

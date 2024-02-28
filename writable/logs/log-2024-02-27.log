@@ -1,0 +1,100 @@
+CRITICAL - 2024-02-27 20:37:59 --> Invalid file: e_user.php
+#0 C:\xampp\htdocs\dbkasir\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('e_user.php')
+#1 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('e_user', Array, true)
+#2 C:\xampp\htdocs\dbkasir\app\Controllers\ConUser.php(92): view('e_user', Array)
+#3 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConUser->e_user('2')
+#4 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConUser))
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2024-02-27 20:38:47 --> Invalid file: e_user.php
+#0 C:\xampp\htdocs\dbkasir\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('e_user.php')
+#1 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('e_user', Array, true)
+#2 C:\xampp\htdocs\dbkasir\app\Controllers\ConUser.php(92): view('e_user', Array)
+#3 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConUser->e_user('2')
+#4 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConUser))
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2024-02-27 20:43:17 --> Attempt to read property "id_user" on null
+#0 C:\xampp\htdocs\dbkasir\app\Controllers\ConUser.php(209): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 209)
+#1 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConUser->checkPassword()
+#2 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConUser))
+#3 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2024-02-27 20:43:43 --> Invalid file: cpass.php
+#0 C:\xampp\htdocs\dbkasir\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cpass.php')
+#1 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('cpass', Array, true)
+#2 C:\xampp\htdocs\dbkasir\app\Controllers\ConUser.php(195): view('cpass', Array)
+#3 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConUser->cpass()
+#4 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConUser))
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2024-02-27 21:06:22 --> Undefined variable $us
+#0 C:\xampp\htdocs\dbkasir\app\Views\barang.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 22)
+#1 C:\xampp\htdocs\dbkasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dbkasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('barang', Array, true)
+#4 C:\xampp\htdocs\dbkasir\app\Controllers\ConBarang.php(19): view('barang', Array)
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConBarang->barang()
+#6 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConBarang))
+#7 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-02-27 21:07:21 --> Undefined property: stdClass::$id_user
+#0 C:\xampp\htdocs\dbkasir\app\Views\barang.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 30)
+#1 C:\xampp\htdocs\dbkasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dbkasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('barang', Array, true)
+#4 C:\xampp\htdocs\dbkasir\app\Controllers\ConBarang.php(19): view('barang', Array)
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConBarang->barang()
+#6 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConBarang))
+#7 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-02-27 21:19:45 --> Attempt to read property "id_user" on null
+#0 C:\xampp\htdocs\dbkasir\app\Views\e_user.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 6)
+#1 C:\xampp\htdocs\dbkasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dbkasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('e_user', Array, true)
+#4 C:\xampp\htdocs\dbkasir\app\Controllers\ConUser.php(92): view('e_user', Array)
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConUser->e_user('1')
+#6 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConUser))
+#7 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-02-27 21:40:04 --> Class "App\Controllers\S_model" not found
+#0 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConStok->stok()
+#1 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConStok))
+#2 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2024-02-27 21:41:20 --> Class "App\Controllers\S_model" not found
+#0 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConStok->stok()
+#1 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConStok))
+#2 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2024-02-27 21:41:28 --> Undefined variable $b
+#0 C:\xampp\htdocs\dbkasir\app\Views\stok.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 21)
+#1 C:\xampp\htdocs\dbkasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dbkasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('stok', Array, true)
+#4 C:\xampp\htdocs\dbkasir\app\Controllers\ConStok.php(20): view('stok', Array)
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConStok->stok()
+#6 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConStok))
+#7 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
