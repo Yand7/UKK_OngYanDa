@@ -5,6 +5,11 @@
                 <form action="<?= base_url('ConUser/output_euser')?>" method="post" enctype="multipart/form-data">
                     <input type="hidden" name="ide" value="<?= $us->id_user?>">
                     <div class="mb-3">
+                        <label for="" class="form-label">Nama Lengkap</label>
+                        <input type="text" class="form-control" id="" placeholder="Nama Lengkap" name="nl"
+                            value="<?= $us->n_lengkap?>" />
+                    </div>
+                    <div class="mb-3">
                         <label for="" class="form-label">Username</label>
                         <input type="text" class="form-control" id="" placeholder="Username" name="nm"
                             value="<?= $us->username?>" />

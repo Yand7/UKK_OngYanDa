@@ -59,6 +59,16 @@ class H_model extends Model
         return $invoiceNumber;
     }
 
+    public function getNoOut() {
+        $prefix = 'OUT';
+
+        $randomPart = $this->generateRandomString(4); 
+
+        $invoiceNumber = $prefix . $randomPart;
+
+        return $invoiceNumber;
+    }
+
     private function generateRandomString($length) {
         $characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
         $randomString = '';

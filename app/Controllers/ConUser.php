@@ -56,6 +56,7 @@ class ConUser extends BaseController
     }
 
     public function output_tuser(){
+		$a = $this -> request-> getPost('nl');
 		$b = $this -> request-> getPost('nm');
 		$c = $this -> request-> getPost('em');
 		$d = $this -> request-> getPost('pw');
@@ -64,6 +65,7 @@ class ConUser extends BaseController
 		$model=new H_model();
 
 		$data = array(
+			'n_lengkap' => $a,
 			'username' => $b,
 			'email' => $c,
 			'pw' =>md5($d),
@@ -100,6 +102,7 @@ class ConUser extends BaseController
 
     public function output_euser(){
 		$id = $this -> request-> getPost('ide');
+		$a = $this -> request-> getPost('nl');
 		$b = $this -> request-> getPost('nm');
 		$c = $this -> request-> getPost('em');
 		$d = $this -> request-> getPost('pw');
@@ -108,6 +111,7 @@ class ConUser extends BaseController
 		$model = new H_Model();
 		$where=array('id_user'=>$id);
 		$data = array(
+			'n_lengkap' => $a,
 			'username' => $b,
 			'email' => $c,
 			'pw' =>md5($d),
@@ -247,4 +251,112 @@ class ConUser extends BaseController
 
 		return redirect()->to ('/ConUser/user_s');
 	}
+
+    public function level(){
+        if(session()->get('level')==1 || session()->get('level')==2) {
+            $model = new U_model();
+            $data['l'] = $model->getLevel();
+    
+            echo view('header');
+            echo view('menu');
+            echo view('level', $data);
+            echo view('footer');
+        
+        }else{
+            return redirect()->to('/Home/log_out');
+        }
+	}
+   
+    public function bin_level(){
+        if(session()->get('level')==1) {
+            $model = new U_model();
+            $data['us'] = $model->getBinUser();
+    
+            echo view('header');
+            echo view('menu');
+            echo view('bin_level', $data);
+            echo view('footer');
+        
+        }else{
+            return redirect()->to('/Home/log_out');
+        }
+	}
+
+    public function t_level(){
+        if(session()->get('level')==1 || session()->get('level')==2) {
+            $model = new U_model(); 
+            
+            $data['lvl'] = $model->getLevel();
+    
+            echo view('header');
+            echo view('menu');
+            echo view('t_level', $data);
+            echo view('footer');
+        
+        }else{
+            return redirect()->to('/Home/log_out');
+        }
+        
+    }
+
+    public function output_tlevel(){
+		$b = $this -> request-> getPost('nl');
+		
+		$model=new H_model();
+
+		$data = array(
+			'nm_level' => $b
+        );
+
+		// print_r($data);
+		$model->simpan('level',$data);		
+
+		return redirect()->to ('/ConUser/level');
+    }
+
+    public function e_level($id){
+        if(session()->get('level')==1 || session()->get('level')==2) {
+            $model = new H_model();
+    
+            $where = array('id_level'=>$id);
+            $data['l'] = $model->getWhere('level', $where);
+        
+            echo view('header');
+            echo view('menu');
+            echo view('e_level', $data);
+            echo view('footer');
+        
+        }else{
+            return redirect()->to('/Home/log_out');
+        }
+	
+    }
+
+    public function output_elevel(){
+		$id = $this -> request-> getPost('ide');
+        $b = $this -> request-> getPost('nl');
+
+		$model = new H_Model();
+		$where=array('id_level'=>$id);
+		$data = array(
+			'nm_level' => $b
+        );
+		
+		// print_r($data2);
+		$model->qedit('level', $data,$where);
+
+		return redirect()->to ('/ConUser/level');
+	}
+
+    public function delete_level($id){
+        if(session()->get('level')==1) {
+            $model = new H_model();
+            $where = array('id_level'=>$id);
+            $model->hapus('level', $where);
+            return redirect()->to ('/ConUser/level');
+        }else{
+            return redirect()->to('/Home/log_out');
+        }
+    }
+
 }

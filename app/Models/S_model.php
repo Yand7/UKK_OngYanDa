@@ -7,7 +7,6 @@ class S_model extends Model
         $query = $this->db->table('stok')
             ->select('*, stok.create_date as inputDate')
             ->join('barang','barang.kd_barang=stok.barang')
-            ->where("stok.tgl",date('Y-m-d'))
             ->where("stok.delete_date IS NULL")
             ->orderBy('stok.id', 'desc');
 
@@ -15,5 +14,14 @@ class S_model extends Model
 
     }
     
-    
+    public function getBinStok() {
+        $query = $this->db->table('stok')
+        ->select('*, stok.create_date as inputDate, stok.delete_date as delete_date1')
+        ->join('barang','barang.kd_barang=stok.barang')
+        ->where("stok.delete_date IS NOT NULL")
+        ->orderBy('stok.id', 'desc');
+
+    return $query->get()->getResult();
+
+    }
 }

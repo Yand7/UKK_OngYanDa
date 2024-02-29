@@ -12,16 +12,17 @@ class P_model extends Model
         return $query->get()->getResult();
 
     }
-    
-    public function getPelanggan2() {
+   
+    public function getBinPelanggan() {
         $query = $this->db->table('pelanggan')
             ->select('*')
-            ->where("pelanggan.status=0")
-            ->where("pelanggan.delete_date IS NULL")
+            ->where("pelanggan.delete_date IS NOT NULL")
             ->orderBy('id_pelanggan', 'desc');
 
         return $query->get()->getResult();
 
     }
+    
+    
 
 }

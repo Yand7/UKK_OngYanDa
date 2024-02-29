@@ -12,6 +12,7 @@
                         <thead>
                             <tr>
                                 <th style="padding-left: 0.5rem;">ID</th>
+                                <th style="padding-left: 0.5rem;">Nama Lengkap</th>
                                 <th style="padding-left: 0.5rem;">Username</th>
                                 <th style="padding-left: 0.5rem;">Email</th>
                                 <th style="padding-left: 0.5rem;">Level</th>
@@ -22,6 +23,7 @@
                             <?php foreach($us as $data){?>
                             <tr>
                                 <td>(<?= $data->id_user?>)</td>
+                                <td><?= $data->n_lengkap?></td>
                                 <td><?= $data->username?></td>
                                 <td><?= $data->email?></td>
                                 <td><?= $data->nm_level?></td>

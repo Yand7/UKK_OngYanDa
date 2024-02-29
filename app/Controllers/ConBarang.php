@@ -24,6 +24,21 @@ class ConBarang extends BaseController
         }
 	}
 
+    public function bin_barang(){
+        if(session()->get('level')==1) {
+            $model = new B_model();
+            $data['b'] = $model->getBinBarang();
+    
+            echo view('header');
+            echo view('menu');
+            echo view('bin_barang', $data);
+            echo view('footer');
+        
+        }else{
+            return redirect()->to('/Home/log_out');
+        }
+	}
+
     public function t_barang(){
         if(session()->get('level')==1 || session()->get('level')==2) {
             
@@ -137,7 +152,7 @@ class ConBarang extends BaseController
                 'delete_date' => null
             );
     
-            $model->qedit('user', $data2, $where);
+            $model->qedit('barang', $data2, $where);
     
             return redirect()->to ('/ConBarang/bin_barang');
         }else{

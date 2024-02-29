@@ -11,6 +11,7 @@
                                 <th style="padding-left: 0.5rem;">Username</th>
                                 <th style="padding-left: 0.5rem;">Email</th>
                                 <th style="padding-left: 0.5rem;">Level</th>
+                                <th style="padding-left: 0.5rem;">Delete Date</th>
                                 <th style="padding-left: 0.5rem;">Action</th>
                             </tr>
                         </thead>
@@ -21,6 +22,7 @@
                                 <td><?= $data->username?></td>
                                 <td><?= $data->email?></td>
                                 <td><?= $data->nm_level?></td>
+                                <td><?= $data->delete_date?></td>
                                 <td>
 
 

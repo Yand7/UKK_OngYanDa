@@ -39,7 +39,7 @@ if (session()->get('level')== '1' ) {
                         <i class="menu-icon tf-icons bx bx-detail"></i>
                         <div data-i18n="Layouts">Transaksi</div>
                     </a>
-                    
+
                     <ul class="menu-sub">
                         <li class="menu-item">
                             <a href="<?= base_url('/ConTrans/transaksi')?>" class="menu-link">
@@ -48,41 +48,49 @@ if (session()->get('level')== '1' ) {
                         </li>
                     </ul>
 
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a href="<?= base_url('/ConTrans/outbound')?>" class="menu-link">
+                                <div data-i18n="Without menu">Daftar Pengeluaran</div>
+                            </a>
+                        </li>
+                    </ul>
+
                 </li>
-                
+
                 <li class="menu-item">
                     <a href="javascript:void(0);" class="menu-link menu-toggle">
                         <i class="menu-icon tf-icons bx bx-calendar-event"></i>
                         <div data-i18n="Layouts">Laporan</div>
                     </a>
-                    
+
                     <ul class="menu-sub">
                         <li class="menu-item">
-                            <a href="<?= base_url('/ConTrans/transaksi')?>" class="menu-link">
+                            <a href="<?= base_url('/ConLaporan/diagram')?>" class="menu-link">
+                                <div data-i18n="Without menu">Diagram</div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a href="<?= base_url('/ConLaporan/laporan_pemasukan')?>" class="menu-link">
                                 <div data-i18n="Without menu">Laporan Pemasukan</div>
                             </a>
                         </li>
                     </ul>
-                    
+
                     <ul class="menu-sub">
                         <li class="menu-item">
-                            <a href="<?= base_url('/ConTrans/transaksi')?>" class="menu-link">
-                                <div data-i18n="Without menu">Diagram Pemasukan</div>
-                            </a>
-                        </li>
-                    </ul>
-                    
-                    <ul class="menu-sub">
-                        <li class="menu-item">
-                            <a href="<?= base_url('/ConTrans/transaksi')?>" class="menu-link">
+                            <a href="<?= base_url('/ConLaporan/laporan_pengeluaran')?>" class="menu-link">
                                 <div data-i18n="Without menu">Laporan Pengeluaran</div>
                             </a>
                         </li>
                     </ul>
-                    
+
 
                 </li>
-               
+
                 <li class="menu-item">
                     <a href="javascript:void(0);" class="menu-link menu-toggle">
                         <i class="menu-icon tf-icons bx bx-folder-open"></i>
@@ -96,7 +104,7 @@ if (session()->get('level')== '1' ) {
                             </a>
                         </li>
                     </ul>
-                    
+
                     <ul class="menu-sub">
                         <li class="menu-item">
                             <a href="<?= base_url('/ConStok/stok')?>" class="menu-link">
@@ -120,6 +128,14 @@ if (session()->get('level')== '1' ) {
                             </a>
                         </li>
                     </ul>
+
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a href="<?= base_url('/ConUser/level')?>" class="menu-link">
+                                <div data-i18n="Without menu">Data Level</div>
+                            </a>
+                        </li>
+                    </ul>
                     <ul class="menu-sub">
                         <li class="menu-item">
                             <a href="<?= base_url('/ConPelanggan/pelanggan')?>" class="menu-link">
@@ -139,6 +155,31 @@ if (session()->get('level')== '1' ) {
                         <li class="menu-item">
                             <a href="<?= base_url('/ConUser/bin_user')?>" class="menu-link">
                                 <div data-i18n="Without menu">Data User</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="<?= base_url('/ConPelanggan/bin_pelanggan')?>" class="menu-link">
+                                <div data-i18n="Without menu">Data Pelanggan</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="<?= base_url('/ConBarang/bin_barang')?>" class="menu-link">
+                                <div data-i18n="Without menu">Daftar Barang</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="<?= base_url('/ConStok/bin_stok')?>" class="menu-link">
+                                <div data-i18n="Without menu">Stok</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="<?= base_url('/ConTrans/bin_trans')?>" class="menu-link">
+                                <div data-i18n="Without menu">Daftar Transaksi</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="<?= base_url('/ConTrans/bin_outbound')?>" class="menu-link">
+                                <div data-i18n="Without menu">Daftar Pengeluaran</div>
                             </a>
                         </li>
                     </ul>
@@ -222,7 +263,7 @@ if (session()->get('level')== '1' ) {
                     </ul>
                 </div>
             </nav>
-           
+
             <?php 
 }else if (session()->get('level')== '2' ) {
 ?>
@@ -257,92 +298,100 @@ if (session()->get('level')== '1' ) {
                             </li>
 
                             <li class="menu-item">
-                    <a href="javascript:void(0);" class="menu-link menu-toggle">
-                        <i class="menu-icon tf-icons bx bx-detail"></i>
-                        <div data-i18n="Layouts">Transaksi</div>
-                    </a>
-                    
-                    <ul class="menu-sub">
-                        <li class="menu-item">
-                            <a href="<?= base_url('/ConTrans/transaksi')?>" class="menu-link">
-                                <div data-i18n="Without menu">Daftar Transaksi</div>
-                            </a>
-                        </li>
-                    </ul>
+                                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                                    <i class="menu-icon tf-icons bx bx-detail"></i>
+                                    <div data-i18n="Layouts">Transaksi</div>
+                                </a>
 
-                </li>
+                                <ul class="menu-sub">
+                                    <li class="menu-item">
+                                        <a href="<?= base_url('/ConTrans/transaksi')?>" class="menu-link">
+                                            <div data-i18n="Without menu">Daftar Transaksi</div>
+                                        </a>
+                                    </li>
+                                </ul>
 
-                <li class="menu-item">
-                    <a href="javascript:void(0);" class="menu-link menu-toggle">
-                        <i class="menu-icon tf-icons bx bx-calendar-event"></i>
-                        <div data-i18n="Layouts">Laporan</div>
-                    </a>
-                    
-                    <ul class="menu-sub">
-                        <li class="menu-item">
-                            <a href="<?= base_url('/ConTrans/transaksi')?>" class="menu-link">
-                                <div data-i18n="Without menu">Laporan Pemasukan</div>
-                            </a>
-                        </li>
-                    </ul>
-                    
-                    <ul class="menu-sub">
-                        <li class="menu-item">
-                            <a href="<?= base_url('/ConTrans/transaksi')?>" class="menu-link">
-                                <div data-i18n="Without menu">Diagram Pemasukan</div>
-                            </a>
-                        </li>
-                    </ul>
-                    
-                    <ul class="menu-sub">
-                        <li class="menu-item">
-                            <a href="<?= base_url('/ConTrans/transaksi')?>" class="menu-link">
-                                <div data-i18n="Without menu">Laporan Pengeluaran</div>
-                            </a>
-                        </li>
-                    </ul>
-                    
+                                <ul class="menu-sub">
+                                    <li class="menu-item">
+                                        <a href="<?= base_url('/ConTrans/outbound')?>" class="menu-link">
+                                            <div data-i18n="Without menu">Daftar Pengeluaran</div>
+                                        </a>
+                                    </li>
+                                </ul>
 
-                </li>
-               
-                <li class="menu-item">
-                    <a href="javascript:void(0);" class="menu-link menu-toggle">
-                        <i class="menu-icon tf-icons bx bx-folder-open"></i>
-                        <div data-i18n="Layouts">Pendataan Barang</div>
-                    </a>
-
-                    <ul class="menu-sub">
-                        <li class="menu-item">
-                            <a href="<?= base_url('/ConBarang/barang')?>" class="menu-link">
-                                <div data-i18n="Without menu">Daftar Barang</div>
-                            </a>
-                        </li>
-                    </ul>
-                    
-                    <ul class="menu-sub">
-                        <li class="menu-item">
-                            <a href="<?= base_url('/ConStok/stok')?>" class="menu-link">
-                                <div data-i18n="Without menu">Tambah Stok</div>
-                            </a>
-                        </li>
-                    </ul>
-
-                </li>
-
-                <li class="menu-item">
-                    <a href="javascript:void(0);" class="menu-link menu-toggle">
-                        <i class="menu-icon tf-icons bx bx-folder"></i>
-                        <div data-i18n="Layouts">Data Master</div>
-                    </a>
-                    <ul class="menu-sub">
-                        <li class="menu-item">
-                            <a href="<?= base_url('/ConPelanggan/pelanggan')?>" class="menu-link">
-                                <div data-i18n="Without menu">Data Pelanggan</div>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
                             </li>
+
+                            <li class="menu-item">
+                                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                                    <i class="menu-icon tf-icons bx bx-calendar-event"></i>
+                                    <div data-i18n="Layouts">Laporan</div>
+                                </a>
+
+                                <ul class="menu-sub">
+                                    <li class="menu-item">
+                                        <a href="<?= base_url('/ConLaporan/diagram')?>" class="menu-link">
+                                            <div data-i18n="Without menu">Diagram</div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <ul class="menu-sub">
+                                    <li class="menu-item">
+                                        <a href="<?= base_url('/ConLaporan/laporan_pemasukan')?>" class="menu-link">
+                                            <div data-i18n="Without menu">Laporan Pemasukan</div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <ul class="menu-sub">
+                                    <li class="menu-item">
+                                        <a href="<?= base_url('/ConLaporan/laporan_pengeluaran')?>" class="menu-link">
+                                            <div data-i18n="Without menu">Laporan Pengeluaran</div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                                    <i class="menu-icon tf-icons bx bx-folder-open"></i>
+                                    <div data-i18n="Layouts">Pendataan Barang</div>
+                                </a>
+
+                                <ul class="menu-sub">
+                                    <li class="menu-item">
+                                        <a href="<?= base_url('/ConBarang/barang')?>" class="menu-link">
+                                            <div data-i18n="Without menu">Daftar Barang</div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <ul class="menu-sub">
+                                    <li class="menu-item">
+                                        <a href="<?= base_url('/ConStok/stok')?>" class="menu-link">
+                                            <div data-i18n="Without menu">Tambah Stok</div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                                    <i class="menu-icon tf-icons bx bx-folder"></i>
+                                    <div data-i18n="Layouts">Data Master</div>
+                                </a>
+                                <ul class="menu-sub">
+                                    <li class="menu-item">
+                                        <a href="<?= base_url('/ConPelanggan/pelanggan')?>" class="menu-link">
+                                            <div data-i18n="Without menu">Data Pelanggan</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
                         </ul>
                     </aside>
                     <!-- / Menu -->
@@ -422,4 +471,4 @@ if (session()->get('level')== '1' ) {
                                 </ul>
                             </div>
                         </nav>
-                                    <?php } ?>
+                        <?php } ?>

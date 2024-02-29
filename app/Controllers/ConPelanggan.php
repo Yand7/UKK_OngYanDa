@@ -25,8 +25,8 @@ class ConPelanggan extends BaseController
    
     public function bin_pelanggan(){
         if(session()->get('level')==1) {
-            $model = new U_model();
-            $data['us'] = $model->getBinUser();
+            $model = new P_model();
+            $data['p'] = $model->getBinPelanggan();
     
             echo view('header');
             echo view('menu');
@@ -116,8 +116,8 @@ class ConPelanggan extends BaseController
         if(session()->get('level')==1) {
             $model = new H_model();
             $where = array('id_pelanggan'=>$id);
-            $model->hapus('user', $where);
-            return redirect()->to ('/ConUser/bin_pelanggan');
+            $model->hapus('pelanggan', $where);
+            return redirect()->to ('/ConPelanggan/bin_pelanggan');
         }else{
             return redirect()->to('/Home/log_out');
         }
@@ -150,9 +150,9 @@ class ConPelanggan extends BaseController
                 'delete_date' => null
             );
     
-            $model->qedit('user', $data2, $where);
+            $model->qedit('pelanggan', $data2, $where);
     
-            return redirect()->to ('/ConUser/bin_pelanggan');
+            return redirect()->to ('/ConPelanggan/bin_pelanggan');
         }else{
             return redirect()->to('/Home/log_out');
         }

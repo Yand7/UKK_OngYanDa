@@ -25,6 +25,21 @@ class ConStok extends BaseController
         }
 	}
 
+    public function bin_stok(){
+        if(session()->get('level')==1) {
+            $model = new S_model();
+            $data['s'] = $model->getBinStok();
+    
+            echo view('header');
+            echo view('menu');
+            echo view('bin_stok', $data);
+            echo view('footer');
+        
+        }else{
+            return redirect()->to('/Home/log_out');
+        }
+	}
+
     public function t_stok(){
         if(session()->get('level')==1 || session()->get('level')==2) {
             $model = new B_model();
@@ -63,9 +78,9 @@ class ConStok extends BaseController
     public function delete_stok($id){
         if(session()->get('level')==1) {
             $model = new H_model();
-            $where = array('id_stok'=>$id);
-            $model->hapus('barang', $where);
-            return redirect()->to ('/ConBarang/bin_stok');
+            $where = array('id'=>$id);
+            $model->hapus('stok', $where);
+            return redirect()->to ('/ConStok/bin_stok');
         }else{
             return redirect()->to('/Home/log_out');
         }

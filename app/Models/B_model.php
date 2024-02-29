@@ -13,5 +13,13 @@ class B_model extends Model
 
     }
     
-    
+    public function getBinBarang() {
+        $query = $this->db->table('barang')
+        ->select('*')
+        ->where("barang.delete_date IS NOT NULL")
+        ->orderBy('barang.id_barang', 'desc');
+
+    return $query->get()->getResult();
+
+    }
 }

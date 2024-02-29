@@ -1,0 +1,302 @@
+CRITICAL - 2024-02-29 08:13:12 --> Invalid file: level.php
+#0 C:\xampp\htdocs\dbkasir\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('level.php')
+#1 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('level', Array, true)
+#2 C:\xampp\htdocs\dbkasir\app\Controllers\ConUser.php(262): view('level', Array)
+#3 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConUser->level()
+#4 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConUser))
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2024-02-29 08:20:43 --> Invalid file: laporan.php
+#0 C:\xampp\htdocs\dbkasir\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan.php')
+#1 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('laporan', Array, true)
+#2 C:\xampp\htdocs\dbkasir\app\Controllers\ConLaporan.php(21): view('laporan', Array)
+#3 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConLaporan->laporan_pemasukan()
+#4 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConLaporan))
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2024-02-29 08:22:14 --> Undefined variable $tgl
+#0 C:\xampp\htdocs\dbkasir\app\Views\laporan.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20)
+#1 C:\xampp\htdocs\dbkasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dbkasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('laporan', Array, true)
+#4 C:\xampp\htdocs\dbkasir\app\Controllers\ConLaporan.php(21): view('laporan', Array)
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConLaporan->laporan_pemasukan()
+#6 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConLaporan))
+#7 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-02-29 08:23:06 --> Invalid file: pdf_pemasukan.php
+#0 C:\xampp\htdocs\dbkasir\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pdf_pemasukan.p...')
+#1 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('pdf_pemasukan', Array, true)
+#2 C:\xampp\htdocs\dbkasir\app\Controllers\ConLaporan.php(65): view('pdf_pemasukan', Array)
+#3 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConLaporan->pdf_pemasukan()
+#4 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConLaporan))
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2024-02-29 08:25:26 --> Invalid file: pdf_pemasukan.php
+#0 C:\xampp\htdocs\dbkasir\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pdf_pemasukan.p...')
+#1 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('pdf_pemasukan', Array, true)
+#2 C:\xampp\htdocs\dbkasir\app\Controllers\ConLaporan.php(65): view('pdf_pemasukan', Array)
+#3 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConLaporan->pdf_pemasukan()
+#4 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConLaporan))
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2024-02-29 08:26:34 --> Invalid file: pdf_pemasukan.php
+#0 C:\xampp\htdocs\dbkasir\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pdf_pemasukan.p...')
+#1 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('pdf_pemasukan', Array, true)
+#2 C:\xampp\htdocs\dbkasir\app\Controllers\ConLaporan.php(65): view('pdf_pemasukan', Array)
+#3 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConLaporan->pdf_pemasukan()
+#4 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConLaporan))
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2024-02-29 08:27:06 --> Invalid file: pdf_pemasukan.php
+#0 C:\xampp\htdocs\dbkasir\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pdf_pemasukan.p...')
+#1 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('pdf_pemasukan', Array, true)
+#2 C:\xampp\htdocs\dbkasir\app\Controllers\ConLaporan.php(65): view('pdf_pemasukan', Array)
+#3 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConLaporan->pdf_pemasukan()
+#4 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConLaporan))
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2024-02-29 08:28:40 --> Invalid file: laporan_out.php
+#0 C:\xampp\htdocs\dbkasir\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan_out.php')
+#1 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('laporan_out', Array, true)
+#2 C:\xampp\htdocs\dbkasir\app\Controllers\ConLaporan.php(85): view('laporan_out', Array)
+#3 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConLaporan->laporan_pengeluaran()
+#4 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConLaporan))
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2024-02-29 08:29:52 --> Undefined variable $tgl
+#0 C:\xampp\htdocs\dbkasir\app\Views\laporan_out.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20)
+#1 C:\xampp\htdocs\dbkasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dbkasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('laporan_out', Array, true)
+#4 C:\xampp\htdocs\dbkasir\app\Controllers\ConLaporan.php(102): view('laporan_out', Array)
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConLaporan->filter_pengeluaran()
+#6 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConLaporan))
+#7 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-02-29 08:30:27 --> Undefined variable $a
+#0 C:\xampp\htdocs\dbkasir\app\Controllers\ConLaporan.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 121)
+#1 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConLaporan->pdf_pengeluaran()
+#2 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConLaporan))
+#3 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2024-02-29 08:30:40 --> Invalid file: pdf_pengeluaran.php
+#0 C:\xampp\htdocs\dbkasir\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pdf_pengeluaran...')
+#1 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('pdf_pengeluaran', Array, true)
+#2 C:\xampp\htdocs\dbkasir\app\Controllers\ConLaporan.php(125): view('pdf_pengeluaran', Array)
+#3 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConLaporan->pdf_pengeluaran()
+#4 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConLaporan))
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2024-02-29 08:31:50 --> Invalid file: outbound.php
+#0 C:\xampp\htdocs\dbkasir\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('outbound.php')
+#1 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('outbound', Array, true)
+#2 C:\xampp\htdocs\dbkasir\app\Controllers\ConTrans.php(175): view('outbound', Array)
+#3 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConTrans->outbound()
+#4 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConTrans))
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2024-02-29 08:33:38 --> Invalid file: diagram.php
+#0 C:\xampp\htdocs\dbkasir\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('diagram.php')
+#1 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('diagram', Array, true)
+#2 C:\xampp\htdocs\dbkasir\app\Controllers\ConLaporan.php(144): view('diagram', Array)
+#3 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConLaporan->diagram()
+#4 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConLaporan))
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2024-02-29 08:37:18 --> Undefined property: stdClass::$deete_date
+#0 C:\xampp\htdocs\dbkasir\app\Views\bin_user.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 25)
+#1 C:\xampp\htdocs\dbkasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dbkasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('bin_user', Array, true)
+#4 C:\xampp\htdocs\dbkasir\app\Controllers\ConUser.php(33): view('bin_user', Array)
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConUser->bin_user()
+#6 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConUser))
+#7 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-02-29 08:40:20 --> Class "App\Controllers\U_model" not found
+#0 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConPelanggan->bin_pelanggan()
+#1 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConPelanggan))
+#2 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2024-02-29 08:40:27 --> Undefined variable $us
+#0 C:\xampp\htdocs\dbkasir\app\Views\bin_pelanggan.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 19)
+#1 C:\xampp\htdocs\dbkasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dbkasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('bin_pelanggan', Array, true)
+#4 C:\xampp\htdocs\dbkasir\app\Controllers\ConPelanggan.php(33): view('bin_pelanggan', Array)
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConPelanggan->bin_pelanggan()
+#6 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConPelanggan))
+#7 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-02-29 08:41:19 --> Undefined property: stdClass::$id_user
+#0 C:\xampp\htdocs\dbkasir\app\Views\bin_pelanggan.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 28)
+#1 C:\xampp\htdocs\dbkasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dbkasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('bin_pelanggan', Array, true)
+#4 C:\xampp\htdocs\dbkasir\app\Controllers\ConPelanggan.php(33): view('bin_pelanggan', Array)
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConPelanggan->bin_pelanggan()
+#6 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConPelanggan))
+#7 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-02-29 08:46:23 --> Class "App\Controllers\P_model" not found
+#0 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConBarang->bin_barang()
+#1 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConBarang))
+#2 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2024-02-29 08:46:29 --> Class "App\Controllers\P_model" not found
+#0 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConBarang->bin_barang()
+#1 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConBarang))
+#2 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2024-02-29 08:47:33 --> Undefined property: stdClass::$id_user
+#0 C:\xampp\htdocs\dbkasir\app\Views\bin_barang.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 30)
+#1 C:\xampp\htdocs\dbkasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dbkasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('bin_barang', Array, true)
+#4 C:\xampp\htdocs\dbkasir\app\Controllers\ConBarang.php(34): view('bin_barang', Array)
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConBarang->bin_barang()
+#6 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConBarang))
+#7 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-02-29 08:55:41 --> Class "App\Controllers\P_model" not found
+#0 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConStok->bin_stok()
+#1 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConStok))
+#2 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2024-02-29 08:58:01 --> Undefined property: stdClass::$id_stok
+#0 C:\xampp\htdocs\dbkasir\app\Views\bin_stok.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 28)
+#1 C:\xampp\htdocs\dbkasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dbkasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('bin_stok', Array, true)
+#4 C:\xampp\htdocs\dbkasir\app\Controllers\ConStok.php(35): view('bin_stok', Array)
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConStok->bin_stok()
+#6 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConStok))
+#7 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2024-02-29 08:58:45 --> Unknown column 'id_stok' in 'where clause'
+ERROR - 2024-02-29 08:59:35 --> Unknown column 'id_stok' in 'where clause'
+CRITICAL - 2024-02-29 09:03:34 --> Invalid file: bin_trans.php
+#0 C:\xampp\htdocs\dbkasir\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('bin_trans.php')
+#1 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('bin_trans', Array, true)
+#2 C:\xampp\htdocs\dbkasir\app\Controllers\ConTrans.php(33): view('bin_trans', Array)
+#3 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConTrans->bin_trans()
+#4 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConTrans))
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2024-02-29 09:05:44 --> Undefined property: stdClass::$nm_pelanggan
+#0 C:\xampp\htdocs\dbkasir\app\Views\bin_trans.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 26)
+#1 C:\xampp\htdocs\dbkasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dbkasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('bin_trans', Array, true)
+#4 C:\xampp\htdocs\dbkasir\app\Controllers\ConTrans.php(33): view('bin_trans', Array)
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConTrans->bin_trans()
+#6 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConTrans))
+#7 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-02-29 09:06:13 --> syntax error, unexpected token "->"
+#0 C:\xampp\htdocs\dbkasir\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\dbkasir\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\T_mo...')
+#2 C:\xampp\htdocs\dbkasir\app\Controllers\ConTrans.php(28): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\T_mo...')
+#3 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConTrans->bin_trans()
+#4 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConTrans))
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2024-02-29 09:06:32 --> Undefined property: stdClass::$id_barang
+#0 C:\xampp\htdocs\dbkasir\app\Views\bin_trans.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 37)
+#1 C:\xampp\htdocs\dbkasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dbkasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('bin_trans', Array, true)
+#4 C:\xampp\htdocs\dbkasir\app\Controllers\ConTrans.php(33): view('bin_trans', Array)
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConTrans->bin_trans()
+#6 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConTrans))
+#7 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-02-29 09:07:57 --> Undefined property: stdClass::$delete_date1
+#0 C:\xampp\htdocs\dbkasir\app\Views\bin_trans.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 33)
+#1 C:\xampp\htdocs\dbkasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dbkasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('bin_trans', Array, true)
+#4 C:\xampp\htdocs\dbkasir\app\Controllers\ConTrans.php(33): view('bin_trans', Array)
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConTrans->bin_trans()
+#6 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConTrans))
+#7 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-02-29 09:22:47 --> Undefined variable $t
+#0 C:\xampp\htdocs\dbkasir\app\Views\bin_trans.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23)
+#1 C:\xampp\htdocs\dbkasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dbkasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('bin_trans', Array, true)
+#4 C:\xampp\htdocs\dbkasir\app\Controllers\ConTrans.php(200): view('bin_trans', Array)
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConTrans->bin_outbound()
+#6 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConTrans))
+#7 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-02-29 09:26:06 --> Undefined property: stdClass::$id_barang
+#0 C:\xampp\htdocs\dbkasir\app\Views\bin_outbound.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 32)
+#1 C:\xampp\htdocs\dbkasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dbkasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dbkasir\system\Common.php(1089): CodeIgniter\View\View->render('bin_outbound', Array, true)
+#4 C:\xampp\htdocs\dbkasir\app\Controllers\ConTrans.php(200): view('bin_outbound', Array)
+#5 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(832): App\Controllers\ConTrans->bin_outbound()
+#6 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConTrans))
+#7 C:\xampp\htdocs\dbkasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dbkasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dbkasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
