@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 28, 2024 at 09:29 AM
+-- Generation Time: Feb 29, 2024 at 07:45 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -29,10 +29,10 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `barang` (
   `id_barang` int(4) NOT NULL,
-  `kd_barang` varchar(50) DEFAULT NULL,
-  `nm_barang` varchar(100) DEFAULT NULL,
-  `harga` varchar(100) DEFAULT NULL,
-  `stok` varchar(50) DEFAULT NULL,
+  `kd_barang` varchar(50) NOT NULL,
+  `nm_barang` varchar(100) NOT NULL,
+  `harga` varchar(100) NOT NULL,
+  `stok` varchar(50) NOT NULL,
   `create_date` datetime DEFAULT NULL,
   `update_date` datetime DEFAULT NULL,
   `delete_date` datetime DEFAULT NULL
@@ -43,9 +43,9 @@ CREATE TABLE `barang` (
 --
 
 INSERT INTO `barang` (`id_barang`, `kd_barang`, `nm_barang`, `harga`, `stok`, `create_date`, `update_date`, `delete_date`) VALUES
-(1, 'BRGaaaa', 'Batre Energizer AAA', '23000', '15', '2024-02-28 10:07:07', '2024-02-27 21:22:41', NULL),
+(1, 'BRGaaaa', 'Batre Energizer AAA', '23000', '16', '2024-02-28 10:07:07', '2024-02-27 21:22:41', NULL),
 (2, 'BRGG8JI', 'Aqua 500ml', '4500', '10', '2024-02-28 21:15:35', NULL, NULL),
-(3, 'BRGnaXK', 'Beng-Beng', '5000', '15', '2024-02-28 14:42:00', NULL, NULL);
+(3, 'BRGnaXK', 'Beng-Beng', '5000', '20', '2024-02-28 14:42:00', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -55,11 +55,19 @@ INSERT INTO `barang` (`id_barang`, `kd_barang`, `nm_barang`, `harga`, `stok`, `c
 
 CREATE TABLE `cart` (
   `id_cart` int(4) NOT NULL,
-  `barang` int(4) DEFAULT NULL,
-  `jumlah` varchar(50) DEFAULT NULL,
-  `user` int(4) DEFAULT NULL,
+  `barang` int(4) NOT NULL,
+  `jumlah` varchar(50) NOT NULL,
+  `user` int(4) NOT NULL,
   `create_date` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `cart`
+--
+
+INSERT INTO `cart` (`id_cart`, `barang`, `jumlah`, `user`, `create_date`) VALUES
+(6, 3, '2', 2, '2024-02-29 09:42:34'),
+(7, 3, '2', 2, '2024-02-29 10:58:15');
 
 -- --------------------------------------------------------
 
@@ -69,7 +77,7 @@ CREATE TABLE `cart` (
 
 CREATE TABLE `level` (
   `id_level` int(4) NOT NULL,
-  `nm_level` varchar(50) DEFAULT NULL
+  `nm_level` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -88,11 +96,11 @@ INSERT INTO `level` (`id_level`, `nm_level`) VALUES
 
 CREATE TABLE `notrans` (
   `id_ntr` int(4) NOT NULL,
-  `ntr` varchar(50) DEFAULT NULL,
-  `n_pelanggan` int(4) DEFAULT NULL,
-  `status` enum('Pending','Paid') DEFAULT NULL,
+  `ntr` varchar(50) NOT NULL,
+  `n_pelanggan` int(4) NOT NULL,
+  `status` enum('Pending','Paid') NOT NULL,
   `payment` varchar(50) DEFAULT NULL,
-  `nominal` varchar(50) DEFAULT NULL,
+  `nominal` varchar(50) NOT NULL,
   `bayar` varchar(50) DEFAULT NULL,
   `kembali` varchar(50) DEFAULT NULL,
   `create_date` datetime DEFAULT NULL,
@@ -105,8 +113,7 @@ CREATE TABLE `notrans` (
 --
 
 INSERT INTO `notrans` (`id_ntr`, `ntr`, `n_pelanggan`, `status`, `payment`, `nominal`, `bayar`, `kembali`, `create_date`, `update_date`, `delete_date`) VALUES
-(2, 'TRNdowL', 2, 'Paid', 'QRIS', '9000', '9000', '0', '2024-02-28 14:23:02', '2024-02-28 14:38:55', NULL),
-(3, 'TRNVcV5', 2, 'Pending', NULL, '25000', NULL, NULL, '2024-02-28 14:44:14', NULL, '2024-02-28 14:50:54');
+(2, 'TRNdowL', 2, 'Paid', 'QRIS', '9000', '9000', '0', '2024-02-28 14:23:02', '2024-02-28 14:38:55', NULL);
 
 -- --------------------------------------------------------
 
@@ -116,12 +123,23 @@ INSERT INTO `notrans` (`id_ntr`, `ntr`, `n_pelanggan`, `status`, `payment`, `nom
 
 CREATE TABLE `outbound` (
   `id_out` int(4) NOT NULL,
-  `keterangan` text DEFAULT NULL,
-  `jumlah` varchar(50) DEFAULT NULL,
+  `ntr_out` varchar(50) NOT NULL,
+  `keterangan` text NOT NULL,
+  `jumlah` varchar(50) NOT NULL,
   `create_date` datetime DEFAULT NULL,
   `update_date` datetime DEFAULT NULL,
   `delete_date` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `outbound`
+--
+
+INSERT INTO `outbound` (`id_out`, `ntr_out`, `keterangan`, `jumlah`, `create_date`, `update_date`, `delete_date`) VALUES
+(1, 'aa', 'aa', '30000', '2024-02-28 22:19:30', NULL, NULL),
+(2, 'OUTL93D', 'stok beng beng', '500000', '2024-02-28 22:27:31', NULL, NULL),
+(3, 'OUT55ew', 'stok beng beng', '500000', '2024-02-28 22:27:39', NULL, NULL),
+(4, 'OUTGVZ4', 'gaji', '20000', '2024-02-29 08:32:52', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -131,7 +149,7 @@ CREATE TABLE `outbound` (
 
 CREATE TABLE `pelanggan` (
   `id_pelanggan` int(4) NOT NULL,
-  `nm_pelanggan` varchar(50) DEFAULT NULL,
+  `nm_pelanggan` varchar(50) NOT NULL,
   `alamat` varchar(100) NOT NULL,
   `nhp` varchar(100) NOT NULL,
   `create_date` datetime DEFAULT NULL,
@@ -144,7 +162,6 @@ CREATE TABLE `pelanggan` (
 --
 
 INSERT INTO `pelanggan` (`id_pelanggan`, `nm_pelanggan`, `alamat`, `nhp`, `create_date`, `update_date`, `delete_date`) VALUES
-(1, 'jofinson', 'batam batam', '081234345', '2024-02-28 14:03:13', NULL, '2024-02-28 14:12:48'),
 (2, 'ahuat yao', 'pinang', '213213213', '2024-02-28 14:09:10', '2024-02-28 14:12:00', NULL);
 
 -- --------------------------------------------------------
@@ -155,9 +172,9 @@ INSERT INTO `pelanggan` (`id_pelanggan`, `nm_pelanggan`, `alamat`, `nhp`, `creat
 
 CREATE TABLE `stok` (
   `id` int(4) NOT NULL,
-  `tgl` date DEFAULT NULL,
-  `barang` varchar(50) DEFAULT NULL,
-  `quantity` varchar(10) DEFAULT NULL,
+  `tgl` date NOT NULL,
+  `barang` varchar(50) NOT NULL,
+  `quantity` varchar(10) NOT NULL,
   `create_date` datetime DEFAULT NULL,
   `delete_date` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -169,7 +186,7 @@ CREATE TABLE `stok` (
 INSERT INTO `stok` (`id`, `tgl`, `barang`, `quantity`, `create_date`, `delete_date`) VALUES
 (1, '2024-02-28', 'BRGG8JI', '5', '2024-02-28 10:42:19', NULL),
 (2, '2024-02-28', 'BRGG8JI', '5', '2024-02-28 10:48:25', '2024-02-28 10:53:50'),
-(3, '2024-02-28', 'BRGG8JI', '10', '2024-02-28 11:10:23', '2024-02-28 11:14:57');
+(4, '2024-02-29', 'BRGaaaa', '1', '2024-02-29 08:53:08', NULL);
 
 --
 -- Triggers `stok`
@@ -202,10 +219,10 @@ DELIMITER ;
 
 CREATE TABLE `transaksi` (
   `id_tran` int(4) NOT NULL,
-  `notrans` varchar(100) DEFAULT NULL,
-  `barang` int(4) DEFAULT NULL,
-  `jumlah` varchar(50) DEFAULT NULL,
-  `harga` varchar(100) DEFAULT NULL,
+  `notrans` varchar(100) NOT NULL,
+  `barang` int(4) NOT NULL,
+  `jumlah` varchar(50) NOT NULL,
+  `harga` varchar(100) NOT NULL,
   `create_date` datetime DEFAULT NULL,
   `delete_date` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -215,8 +232,7 @@ CREATE TABLE `transaksi` (
 --
 
 INSERT INTO `transaksi` (`id_tran`, `notrans`, `barang`, `jumlah`, `harga`, `create_date`, `delete_date`) VALUES
-(1, 'TRNdowL', 2, '2', '9000', '2024-02-28 14:23:02', NULL),
-(2, 'TRNVcV5', 3, '5', '25000', '2024-02-28 14:44:14', '2024-02-28 14:50:54');
+(1, 'TRNdowL', 2, '2', '9000', '2024-02-28 14:23:02', NULL);
 
 --
 -- Triggers `transaksi`
@@ -249,7 +265,7 @@ DELIMITER ;
 
 CREATE TABLE `user` (
   `id_user` int(4) NOT NULL,
-  `n_lengkap` varchar(50) DEFAULT NULL,
+  `n_lengkap` varchar(50) NOT NULL,
   `username` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
   `pw` varchar(50) NOT NULL,
@@ -264,8 +280,9 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id_user`, `n_lengkap`, `username`, `email`, `pw`, `level`, `create_date`, `update_date`, `delete_date`) VALUES
-(2, 'Punya Admin', 'admin', 'admin@gmail.com', 'c4ca4238a0b923820dcc509a6f75849b', 1, '2024-02-28 08:54:54', '2024-02-28 20:40:05', NULL),
-(3, 'yanda', 'yaya', 'yan@gmail.com', 'c4ca4238a0b923820dcc509a6f75849b', 2, '2024-02-28 08:55:40', NULL, NULL);
+(2, 'Punya Admin Admin', 'admin', 'admin@gmail.com', 'c4ca4238a0b923820dcc509a6f75849b', 1, '2024-02-28 08:54:54', '2024-02-29 08:05:38', NULL),
+(3, 'yanda', 'yaya', 'yan@gmail.com', 'c4ca4238a0b923820dcc509a6f75849b', 2, '2024-02-28 08:55:40', NULL, NULL),
+(6, 'aaaa', 'aa', 'a@gmail.com', '28c8edde3d61a0411511d3b1866f0636', 2, '2024-02-28 21:29:09', '2024-02-28 21:33:14', '2024-02-29 08:36:36');
 
 --
 -- Indexes for dumped tables
@@ -275,7 +292,8 @@ INSERT INTO `user` (`id_user`, `n_lengkap`, `username`, `email`, `pw`, `level`, 
 -- Indexes for table `barang`
 --
 ALTER TABLE `barang`
-  ADD PRIMARY KEY (`id_barang`) USING BTREE;
+  ADD PRIMARY KEY (`id_barang`) USING BTREE,
+  ADD UNIQUE KEY `kd_barang` (`kd_barang`);
 
 --
 -- Indexes for table `cart`
@@ -287,25 +305,29 @@ ALTER TABLE `cart`
 -- Indexes for table `level`
 --
 ALTER TABLE `level`
-  ADD PRIMARY KEY (`id_level`);
+  ADD PRIMARY KEY (`id_level`),
+  ADD UNIQUE KEY `nm_level` (`nm_level`);
 
 --
 -- Indexes for table `notrans`
 --
 ALTER TABLE `notrans`
-  ADD PRIMARY KEY (`id_ntr`);
+  ADD PRIMARY KEY (`id_ntr`),
+  ADD UNIQUE KEY `ntr` (`ntr`);
 
 --
 -- Indexes for table `outbound`
 --
 ALTER TABLE `outbound`
-  ADD PRIMARY KEY (`id_out`);
+  ADD PRIMARY KEY (`id_out`),
+  ADD UNIQUE KEY `ntr_out` (`ntr_out`);
 
 --
 -- Indexes for table `pelanggan`
 --
 ALTER TABLE `pelanggan`
-  ADD PRIMARY KEY (`id_pelanggan`);
+  ADD PRIMARY KEY (`id_pelanggan`),
+  ADD UNIQUE KEY `nhp` (`nhp`);
 
 --
 -- Indexes for table `stok`
@@ -317,14 +339,16 @@ ALTER TABLE `stok`
 -- Indexes for table `transaksi`
 --
 ALTER TABLE `transaksi`
-  ADD PRIMARY KEY (`id_tran`);
+  ADD PRIMARY KEY (`id_tran`),
+  ADD UNIQUE KEY `notrans` (`notrans`);
 
 --
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id_user`),
-  ADD UNIQUE KEY `n_lengkap` (`username`) USING BTREE;
+  ADD UNIQUE KEY `n_lengkap` (`username`) USING BTREE,
+  ADD UNIQUE KEY `email` (`email`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -334,31 +358,31 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `barang`
 --
 ALTER TABLE `barang`
-  MODIFY `id_barang` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_barang` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `id_cart` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_cart` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `level`
 --
 ALTER TABLE `level`
-  MODIFY `id_level` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_level` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `notrans`
 --
 ALTER TABLE `notrans`
-  MODIFY `id_ntr` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_ntr` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `outbound`
 --
 ALTER TABLE `outbound`
-  MODIFY `id_out` int(4) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_out` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `pelanggan`
@@ -370,19 +394,19 @@ ALTER TABLE `pelanggan`
 -- AUTO_INCREMENT for table `stok`
 --
 ALTER TABLE `stok`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `transaksi`
 --
 ALTER TABLE `transaksi`
-  MODIFY `id_tran` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_tran` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_user` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

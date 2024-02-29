@@ -51,6 +51,7 @@ class Home extends BaseController
 	}
     
     public function mpg(){
+    if(session()->get('level')==1 || session()->get('level')==2) {
         $model = new B_model();
         $data['b'] = $model->getBarang();
 		
@@ -64,6 +65,9 @@ class Home extends BaseController
         echo view('menu');
         echo view('isi', $data);
         echo view('footer2', $data);
+    }else{
+        return redirect()->to('/Home/log_out');
+    }
     }
 	
 }

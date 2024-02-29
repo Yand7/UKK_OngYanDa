@@ -285,12 +285,10 @@ class ConUser extends BaseController
     public function t_level(){
         if(session()->get('level')==1 || session()->get('level')==2) {
             $model = new U_model(); 
-            
-            $data['lvl'] = $model->getLevel();
-    
+                
             echo view('header');
             echo view('menu');
-            echo view('t_level', $data);
+            echo view('t_level');
             echo view('footer');
         
         }else{
